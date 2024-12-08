@@ -1,4 +1,4 @@
-![IMG-20241208-WA0029](https://github.com/user-attachments/assets/9d481f16-b7c6-4e75-9b0c-54319ef39ba3)# FULL_ADDER_SUBTRACTOR
+ FULL_ADDER_SUBTRACTOR
 
 Implementation-of-Full-Adder-and-Full-subtractor-circuit
 
