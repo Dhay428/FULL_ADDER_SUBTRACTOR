@@ -1,4 +1,4 @@
-# FULL_ADDER_SUBTRACTOR
+![IMG-20241208-WA0029](https://github.com/user-attachments/assets/9d481f16-b7c6-4e75-9b0c-54319ef39ba3)# FULL_ADDER_SUBTRACTOR
 
 Implementation-of-Full-Adder-and-Full-subtractor-circuit
 
@@ -37,19 +37,72 @@ Diff = A ⊕ B ⊕ Bin
 Borrow out = A'Bin + A'B + BBin
 
 **Truthtable**
+FULL ADDER
+
+
+![IMG-20241208-WA0030](https://github.com/user-attachments/assets/e24041e5-b115-445d-8508-a7ea6d64522f)
+
+FULL SUBTRACTOR 
+![IMG-20241208-WA0029](https://github.com/user-attachments/assets/0bedf8f1-f800-48ec-8077-f131d95db2ca)
+
 
 **Procedure**
 
-Write the detailed procedure here
+1 Type the program in Quartus software.
+
+2 Compile and run the program.
+
+3 Generate the RTL schematic and save the logic diagram.
+
+4 Create nodes for inputs and outputs to generate the timing diagram.
+
+5 For different input combinations generate the timing diagram
+
+
 
 **Program:**
+```
+i)FULL ADDER
 
-/* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
-*/
+module fa(a,b,cin,sum,carry);
+input a,b,cin;
+output sum,carry;
+assign sum=( (a ^ b)^c);
+assign carry= ( (a & b)| ( cin &(a ^ b ));
+endmodule
+
+ii)FULL SUBTRACTOR
+
+module fs(a,b,difference,borrow);
+input a,b,bin;
+output difference,borrow;
+assign difference= ( (a ^ b)^bin);
+assign borrow= ( ( ~a & b)| ( bin & (~(a ^ b )));
+endmodule
+```
+
+ Developed by:S.Dhayalaprabu
+ 
+ RegisterNumber:24006289
+
 
 **RTL Schematic**
 
+FULL ADDER
+
+![IMG-20241208-WA0031](https://github.com/user-attachments/assets/39cfb99b-aa70-47a5-86ed-03c4bcdbbf43)
+
+FULL SUBTRACTOR
+
+![IMG-20241208-WA0032](https://github.com/user-attachments/assets/3a13e1d8-895f-47b4-98a7-af53d3a94952)
+
 **Output Timing Waveform**
+
+FUNCTION 1
+![IMG-20241208-WA0033](https://github.com/user-attachments/assets/8e47421c-b01a-44ca-a30e-f91eee82b07b)
+
+FUNCTION 2
+![IMG-20241208-WA0037](https://github.com/user-attachments/assets/9c010d2e-e201-4a67-917c-29bbbe856cb9)
 
 **Result:**
 
